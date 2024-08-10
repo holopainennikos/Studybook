@@ -1,0 +1,9 @@
+.block-left,
+.block-right,
+.block-center {
+  border: solid;
+  border-radius: 10px;
+  border-color: red;
+  margin-top: 50px;
+  display: inline-block;
+}
