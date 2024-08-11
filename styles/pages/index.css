@@ -1,9 +1,47 @@
-.block-left,
+.blocks-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 30px;
+  padding-top: 30px;
+}
+
 .block-right,
+.block-left {
+  border: solid;
+  border-radius: 10px;
+  border-color: red;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 30px;
+  height: 900px;
+}
+
 .block-center {
   border: solid;
   border-radius: 10px;
   border-color: red;
   margin-top: 50px;
-  display: inline-block;
+  /*display: inline-block;*/
+  background-color: rgb(118, 146, 255);
+}
+
+.schedule,
+.class-personnel{
+  border: solid;
+  border-radius: 10px;
+  border-color: blue;
+  display: block;
+  row-gap: 30px;
+  background-color: rgb(118, 146, 255);
+}
+
+.homework,
+.tests {
+  border: solid;
+  border-radius: 10px;
+  border-color: blue;
+  display: block;
+  row-gap: 30px;
+  background-color: rgb(118, 146, 255);
 }

@@ -1,0 +1,302 @@
+[
+  {
+    "id": "1",
+    "image": "images/student-M.png",
+    "name": "Ethan",
+    "surname": "Smith",
+    "gender": "m",
+    "year": 2,
+    "class": "A",
+    "group": "B"
+  },
+  {
+    "id": "2",
+    "image": "images/student-F.png",
+    "name": "Olivia",
+    "surname": "Johnson",
+    "gender": "f",
+    "year": 4,
+    "class": "B",
+    "group": "A"
+  },
+  {
+    "id": "3",
+    "image": "images/student-M.png",
+    "name": "Liam",
+    "surname": "Williams",
+    "gender": "m",
+    "year": 3,
+    "class": "C",
+    "group": "A"
+  },
+  {
+    "id": "4",
+    "image": "images/student-F.png",
+    "name": "Emma",
+    "surname": "Brown",
+    "gender": "f",
+    "year": 1,
+    "class": "D",
+    "group": "B"
+  },
+  {
+    "id": "5",
+    "image": "images/student-M.png",
+    "name": "Noah",
+    "surname": "Jones",
+    "gender": "m",
+    "year": 5,
+    "class": "A",
+    "group": "A"
+  },
+  {
+    "id": "6",
+    "image": "images/student-F.png",
+    "name": "Sophia",
+    "surname": "Garcia",
+    "gender": "f",
+    "year": 2,
+    "class": "C",
+    "group": "B"
+  },
+  {
+    "id": "7",
+    "image": "images/student-M.png",
+    "name": "James",
+    "surname": "Martinez",
+    "gender": "m",
+    "year": 4,
+    "class": "B",
+    "group": "A"
+  },
+  {
+    "id": "8",
+    "image": "images/student-F.png",
+    "name": "Isabella",
+    "surname": "Rodriguez",
+    "gender": "f",
+    "year": 3,
+    "class": "D",
+    "group": "A"
+  },
+  {
+    "id": "9",
+    "image": "images/student-M.png",
+    "name": "Mason",
+    "surname": "Lee",
+    "gender": "m",
+    "year": 1,
+    "class": "C",
+    "group": "B"
+  },
+  {
+    "id": "10",
+    "image": "images/student-F.png",
+    "name": "Mia",
+    "surname": "Walker",
+    "gender": "f",
+    "year": 5,
+    "class": "A",
+    "group": "B"
+  },
+  {
+    "id": "11",
+    "image": "images/student-M.png",
+    "name": "Lucas",
+    "surname": "Harris",
+    "gender": "m",
+    "year": 2,
+    "class": "D",
+    "group": "A"
+  },
+  {
+    "id": "12",
+    "image": "images/student-F.png",
+    "name": "Charlotte",
+    "surname": "Young",
+    "gender": "f",
+    "year": 4,
+    "class": "C",
+    "group": "B"
+  },
+  {
+    "id": "13",
+    "image": "images/student-M.png",
+    "name": "Henry",
+    "surname": "Clark",
+    "gender": "m",
+    "year": 3,
+    "class": "A",
+    "group": "A"
+  },
+  {
+    "id": "14",
+    "image": "images/student-F.png",
+    "name": "Amelia",
+    "surname": "Lewis",
+    "gender": "f",
+    "year": 1,
+    "class": "B",
+    "group": "B"
+  },
+  {
+    "id": "15",
+    "image": "images/student-M.png",
+    "name": "Benjamin",
+    "surname": "Robinson",
+    "gender": "m",
+    "year": 5,
+    "class": "D",
+    "group": "A"
+  },
+  {
+    "id": "16",
+    "image": "images/student-F.png",
+    "name": "Ava",
+    "surname": "King",
+    "gender": "f",
+    "year": 2,
+    "class": "A",
+    "group": "B"
+  },
+  {
+    "id": "17",
+    "image": "images/student-M.png",
+    "name": "Alexander",
+    "surname": "Lopez",
+    "gender": "m",
+    "year": 4,
+    "class": "B",
+    "group": "B"
+  },
+  {
+    "id": "18",
+    "image": "images/student-F.png",
+    "name": "Emily",
+    "surname": "Perez",
+    "gender": "f",
+    "year": 3,
+    "class": "C",
+    "group": "A"
+  },
+  {
+    "id": "19",
+    "image": "images/student-M.png",
+    "name": "Daniel",
+    "surname": "Hill",
+    "gender": "m",
+    "year": 1,
+    "class": "D",
+    "group": "B"
+  },
+  {
+    "id": "20",
+    "image": "images/student-F.png",
+    "name": "Abigail",
+    "surname": "Scott",
+    "gender": "f",
+    "year": 5,
+    "class": "A",
+    "group": "A"
+  },
+  {
+    "id": "21",
+    "image": "images/student-M.png",
+    "name": "Matthew",
+    "surname": "Torres",
+    "gender": "m",
+    "year": 6,
+    "class": "B",
+    "group": "B"
+  },
+  {
+    "id": "22",
+    "image": "images/student-F.png",
+    "name": "Ella",
+    "surname": "Nelson",
+    "gender": "f",
+    "year": 6,
+    "class": "C",
+    "group": "A"
+  },
+  {
+    "id": "23",
+    "image": "images/student-M.png",
+    "name": "David",
+    "surname": "Carter",
+    "gender": "m",
+    "year": 6,
+    "class": "A",
+    "group": "B"
+  },
+  {
+    "id": "24",
+    "image": "images/student-F.png",
+    "name": "Grace",
+    "surname": "Mitchell",
+    "gender": "f",
+    "year": 6,
+    "class": "D",
+    "group": "A"
+  },
+  {
+    "id": "25",
+    "image": "images/student-M.png",
+    "name": "Jack",
+    "surname": "Perez",
+    "gender": "m",
+    "year": 6,
+    "class": "C",
+    "group": "B"
+  },
+  {
+    "id": "26",
+    "image": "images/student-F.png",
+    "name": "Chloe",
+    "surname": "Ramirez",
+    "gender": "f",
+    "year": 6,
+    "class": "A",
+    "group": "A"
+  },
+  {
+    "id": "27",
+    "image": "images/student-M.png",
+    "name": "Samuel",
+    "surname": "Anderson",
+    "gender": "m",
+    "year": 6,
+    "class": "B",
+    "group": "A"
+  },
+  {
+    "id": "28",
+    "image": "images/student-F.png",
+    "name": "Lily",
+    "surname": "Hernandez",
+    "gender": "f",
+    "year": 6,
+    "class": "D",
+    "group": "B"
+  },
+  {
+    "id": "29",
+    "image": "images/student-M.png",
+    "name": "Logan",
+    "surname": "Gonzalez",
+    "gender": "m",
+    "year": 6,
+    "class": "C",
+    "group": "A"
+  },
+  {
+    "id": "30",
+    "image": "images/student-F.png",
+    "name": "Zoe",
+    "surname": "Flores",
+    "gender": "f",
+    "year": 6,
+    "class": "A",
+    "group": "B"
+  }
+]
