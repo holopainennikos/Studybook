@@ -14,7 +14,7 @@
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 30px;
-  height: 900px;
+  /*height: 900px;*/
 }
 
 .block-center {
@@ -36,6 +36,10 @@
   background-color: rgb(118, 146, 255);
 }
 
+.schedule {
+  height: 400px;
+}
+
 .homework,
 .tests {
   border: solid;
@@ -44,4 +48,53 @@
   display: block;
   row-gap: 30px;
   background-color: rgb(118, 146, 255);
+}
+
+.column1,
+.column2,
+.column3,
+.column4,
+.column5 {
+  display: inline-block;
+  border: solid;
+  border-radius: 10px;
+  border-color: blue;
+  height: 100px;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+.row1,
+.row2,
+.row3,
+.row4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 10px;
+  border: solid;
+  border-radius: 10px;
+  border-color: red;
+}
+
+.teacher-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: solid;
+  border-radius: 10px;
+  border-color: red;
+  margin: auto;
+}
+
+.teacher {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: solid;
+  border-radius: 10px;
+  border-color: blue;
+  margin: auto;
+  height: 100px;
+  width: 100px;
 }
