@@ -58,7 +58,7 @@
   display: inline-block;
   border: solid;
   border-radius: 10px;
-  border-color: blue;
+  border-color: red;
   height: 100px;
   row-gap: 10px;
   column-gap: 10px;
@@ -74,7 +74,7 @@
   column-gap: 10px;
   border: solid;
   border-radius: 10px;
-  border-color: red;
+  border-color: blue;
 }
 
 .teacher-row {
@@ -83,7 +83,7 @@
   justify-content: space-between;
   border: solid;
   border-radius: 10px;
-  border-color: red;
+  border-color: blue;
   margin: auto;
 }
 
@@ -97,4 +97,22 @@
   margin: auto;
   height: 100px;
   width: 100px;
+}
+
+.schedule {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.schedule-period1,
+.schedule-period2,
+.schedule-period3,
+.schedule-period4,
+.schedule-period5,
+.schedule-period6 {
+  border: solid;
+  border-radius: 10px;
+  border-color: blue;
+  height: 100%;
 }
