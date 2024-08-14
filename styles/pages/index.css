@@ -55,11 +55,13 @@
 .column3,
 .column4,
 .column5 {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   border: solid;
   border-radius: 10px;
   border-color: red;
   height: 100px;
+  width: 100px;
   row-gap: 10px;
   column-gap: 10px;
 }
@@ -115,4 +117,13 @@
   border-radius: 10px;
   border-color: blue;
   height: 100%;
+}
+
+.student-image {
+  width: 100%;
+}
+
+.student-name {
+  position:relative;
+  top: -100%;
 }

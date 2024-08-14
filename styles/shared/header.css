@@ -15,6 +15,20 @@
   height: 60px;
 }
 
+button {
+  border-top: none;
+  border-bottom: none;
+  border-left: solid;
+  border-right: solid;
+  border-color: red;
+  background-color: rgb(59, 53, 97);
+  color: white;
+  height: 60px;
+  width: 100px;
+  border-width: 1px;
+  font-size: 20px;
+}
+
 .studybook-logo {
   width: 50px;
 }
