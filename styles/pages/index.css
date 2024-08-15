@@ -11,8 +11,10 @@
   border-radius: 10px;
   border-color: red;
   margin-top: 50px;
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex: 1;
   row-gap: 30px;
   /*height: 900px;*/
 }
@@ -26,7 +28,6 @@
   background-color: rgb(118, 146, 255);
 }
 
-.schedule,
 .class-personnel{
   border: solid;
   border-radius: 10px;
@@ -38,6 +39,13 @@
 
 .schedule {
   height: 400px;
+  display: flex;
+  background-color: rgb(118, 146, 255);
+  flex-direction: column;
+  justify-content: stretch;
+  border: solid;
+  border-radius: 10px;
+  border-color: blue;
 }
 
 .homework,
@@ -45,7 +53,9 @@
   border: solid;
   border-radius: 10px;
   border-color: blue;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   row-gap: 30px;
   background-color: rgb(118, 146, 255);
 }
@@ -101,11 +111,6 @@
   width: 100px;
 }
 
-.schedule {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
 .schedule-period1,
 .schedule-period2,
@@ -126,4 +131,18 @@
 .student-name {
   position:relative;
   top: -100%;
+}
+
+.homework-image {
+  width: 50px;
+}
+
+.homework-subject1,
+.homework-subject2,
+.homework-subject3 {
+  display: flex;
+  border: solid;
+  border-radius: 10px;
+  border-color: blue;
+  justify-content: start;
 }
