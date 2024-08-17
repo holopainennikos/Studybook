@@ -137,6 +137,19 @@
   width: 50px;
 }
 
+.test-image {
+  width: 50px;
+}
+
+.feed-image {
+  width: 50px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border: solid;
+  border-radius: 50px;
+  border-width: 2px;
+}
+
 .homework-subject1,
 .homework-subject2,
 .homework-subject3 {
@@ -145,4 +158,25 @@
   border-radius: 10px;
   border-color: blue;
   justify-content: start;
+}
+
+.test-subject1,
+.test-subject2,
+.test-subject3 {
+  display: flex;
+  border: solid;
+  border-radius: 10px;
+  border-color: blue;
+  justify-content: start;
+}
+
+.feed-post {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  border: solid;
+  border-radius: 10px;
+  border-color: blue;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
