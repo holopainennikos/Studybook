@@ -35,13 +35,25 @@
 }
 
 /* Styles for the schedule section */
-.schedule {
-  height: 400px; 
+.schedule { 
   display: flex; 
   flex-direction: column; 
   background-color: rgb(118, 146, 255); 
   border: solid 1px blue; 
   border-radius: 10px; 
+  row-gap: 5px;
+}
+
+.schedule-period1,
+.schedule-period2,
+.schedule-period3,
+.schedule-period4,
+.schedule-period5,
+.schedule-period6 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Styles for the homework and tests sections */
