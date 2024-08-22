@@ -43,20 +43,7 @@
   background-color: rgb(118, 146, 255); 
   border: solid 1px blue; 
   border-radius: 10px; 
-  row-gap: 5px;
-}
-
-/* Styles for the periods on the schedule */
-.schedule-period1,
-.schedule-period2,
-.schedule-period3,
-.schedule-period4,
-.schedule-period5,
-.schedule-period6 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  row-gap: 1px;
 }
 
 /* Styles for the homework and tests sections */
@@ -121,12 +108,49 @@
 }
 
 /* Styles for the div containing the information of a shedule period */
+.schedule-selector-container {
+  display: flex;
+  flex-direction: row;
+  border: solid 1px blue; 
+  border-radius: 5px; 
+  height: 100%; 
+  column-gap: 10px;
+  justify-content: space-between;
+}
+
+.schedule-back-button,
+.schedule-forward-button {
+  border: solid 5px blue;
+  background-color: red;
+  color: white;
+  height: 30px;
+  width: 100px;
+  border-width: 1px;
+  font-size: 12px;
+}
+
+.schedule-day {
+  align-items: center;
+}
+
+/* Styles for the div containing the information of a shedule period */
 .schedule-period {
   display: flex;
   flex-direction: row;
   border: solid 1px blue; 
-  border-radius: 10px; 
+  border-radius: 5px; 
   height: 100%; 
+  column-gap: 10px;
+}
+
+.schedule-recess {
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.recess-text {
+  margin-left: 15rem;
 }
 
 /* Styles for the div containing the times in the schedule */
