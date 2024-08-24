@@ -217,16 +217,14 @@
 }
 
 /* Styles for the homework and test subjects */
-.homework-subject1,
-.homework-subject2,
-.homework-subject3,
-.test-subject1,
-.test-subject2,
-.test-subject3 {
+.homework-subject,
+.test-subject {
   display: flex; 
   border: solid 1px blue; 
   border-radius: 10px; 
   justify-content: start; 
+  align-items: center;
+  column-gap: 20px;
 }
 
 .feed-header-container {
