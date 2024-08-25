@@ -1,3 +1,4 @@
+import {homeworks} from '../scripts/homework';
 
 
 function renderClassroom() {
@@ -36,5 +37,20 @@ document.querySelector('.js-homework-container').innerHTML = `
   <div class="homework-subject">
     <img class="homework-image" src="images/studybook logo.png">
     <div class="homework-subject-name">English</div>
+  </div>
+`;
+
+document.querySelector('.js-test-container').innerHTML = `
+  <div class="test-subject">
+    <img class="test-image" src="images/studybook logo.png">
+    <div>Math</div>
+  </div>
+  <div class="test-subject">
+    <img class="test-image" src="images/studybook logo.png">
+    <div>Finnish</div>
+  </div>
+  <div class="test-subject">
+    <img class="test-image" src="images/studybook logo.png">
+    <div>English</div>
   </div>
 `;
