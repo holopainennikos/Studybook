@@ -33,4 +33,8 @@ class homework {
       dueDate: "Tuesday"
     }];
   }
+
+  saveToStorage() {
+    localStorage.setItem(this.#localStorageKey, JSON.stringify(this.homeworks));
+  }
 }
