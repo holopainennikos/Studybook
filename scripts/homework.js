@@ -1,4 +1,4 @@
-class homework {
+class Homework {
   homeworks;
   #localStorageKey;
 
@@ -38,3 +38,5 @@ class homework {
     localStorage.setItem(this.#localStorageKey, JSON.stringify(this.homeworks));
   }
 }
+
+let homework = new Homework();
