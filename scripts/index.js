@@ -1,4 +1,4 @@
-import {homeworks} from '../scripts/homework';
+//import {homeworks} from '../scripts/homework';
 
 
 function renderClassroom() {
