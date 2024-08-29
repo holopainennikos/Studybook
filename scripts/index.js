@@ -1,4 +1,4 @@
-//import {homeworks} from '../scripts/homework';
+import '../scripts/homework.js';
 
 
 function renderClassroom() {
@@ -21,6 +21,7 @@ document.querySelector('.js-homework-container').innerHTML = `
     <img class="homework-image" src="images/studybook logo.png">
     <div class="homework-subject-name">Math</div>
     <div class="homework-content">The "cottage" from chapter 42</div>
+    <button class="remove-button">x</button>
   </div>
   <div class="homework-subject">
     <img class="homework-image" src="images/studybook logo.png">
@@ -33,10 +34,13 @@ document.querySelector('.js-homework-container').innerHTML = `
         Read pages 132 and 133 from the other book
       </p>
     </div>
+    <button class="remove-button">x</button>
   </div>
   <div class="homework-subject">
     <img class="homework-image" src="images/studybook logo.png">
     <div class="homework-subject-name">English</div>
+    <div class="homework-content">-</div>
+    <button class="remove-button">x</button>
   </div>
 `;
 
@@ -44,13 +48,19 @@ document.querySelector('.js-test-container').innerHTML = `
   <div class="test-subject">
     <img class="test-image" src="images/studybook logo.png">
     <div>Math</div>
+    <div class="homework-content">-</div>
+    <button class="remove-button">x</button>
   </div>
   <div class="test-subject">
     <img class="test-image" src="images/studybook logo.png">
     <div>Finnish</div>
+    <div class="homework-content">-</div>
+    <button class="remove-button">x</button>
   </div>
   <div class="test-subject">
     <img class="test-image" src="images/studybook logo.png">
     <div>English</div>
+    <div class="homework-content">-</div>
+    <button class="remove-button">x</button>
   </div>
 `;
