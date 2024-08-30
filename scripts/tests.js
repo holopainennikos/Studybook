@@ -1,5 +1,5 @@
-export class Homework {
-  homeworks;
+export class Tests {
+  tests;
   #localStorageKey;
 
   constructor(localStorageKey) {
@@ -7,34 +7,34 @@ export class Homework {
     this.#localStorageKey = localStorageKey;
 
     this.#loadFromStorage();
-    //this.calculateHomework();
+    //this.calculateTests();
   }
 
   #loadFromStorage() {
-    this.homeworks = JSON.parse(localStorage.getItem(this.#localStorageKey)) || [{
+    this.tests = JSON.parse(localStorage.getItem(this.#localStorageKey)) || [{
       id: "1",
       subject: "Math",
       logo: "images/studybook logo.jpg",
-      contents: `The "cottage" from chapter 42`,
+      contents: `The whole entire book`,
       dueDate: "Friday"
     },
     {
       id: "2",
       subject: "Finnish",
       logo: "images/studybook logo.jpg",
-      contents: `Exercise 2, 3 and 5 from page 92 from the work book \n Read pages 132 and 133 from the other book`,
+      contents: `Chapters 1 through 5`,
       dueDate: "Wednesday"
     },
     {
       id: "3",
       subject: "English",
       logo: "images/studybook logo.jpg",
-      contents: `Exercise 1 from page 65 of the work book`,
+      contents: `-`,
       dueDate: "Tuesday"
     }];
   }
 
   saveToStorage() {
-    localStorage.setItem(this.#localStorageKey, JSON.stringify(this.homeworks));
+    localStorage.setItem(this.#localStorageKey, JSON.stringify(this.tests));
   }
 }
