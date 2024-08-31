@@ -37,4 +37,9 @@ export class Homework {
   saveToStorage() {
     localStorage.setItem(this.#localStorageKey, JSON.stringify(this.homeworks));
   }
+
+  removeHomework(homeworkID) {
+    this.homeworks = this.homeworks.filter(hw => hw.id !== homeworkID);
+    this.saveToStorage(); // Save the updated list to local storage
+  }
 }

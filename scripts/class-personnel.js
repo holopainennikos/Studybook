@@ -1,9 +1,8 @@
 class classPersonnel {
   students;
   #localStorageKey;
-
   constructor(localStorageKey) {
-    
+
     this.#localStorageKey = localStorageKey;
 
     this.#loadFromStorage();
@@ -49,39 +48,39 @@ class classPersonnel {
 
   addToClass(studentId) {
     let matchingStudent;
-  
+
     this.students.forEach((student) => {
-      if(studentId === student.studentId) {
+      if (studentId === student.studentId) {
         matchingStudent = student;
       }
     });
-  
+
     const quantity = Number(document.querySelector(`.js-quantity-selector-${studentId}`).value);
     if (!quantity) {
       quantity = 1;
     }
-  
-    if(matchingStudent) {
+
+    if (matchingStudent) {
       console.log('this student is already in the class!!')
     } else {
-      this.students.push( { studentId } );
+      this.students.push({ studentId });
     }
-  
+
     this.calculateClassroom();
-  
+
     this.saveToStorage();
   }
 
 
   removeFromClassroom(studentId) {
     const newClassroom = [];
-    
+
     this.students.forEach((student) => {
       if (student.studentId !== studentId) {
         newClassroom.push(student);
       }
     });
-  
+
     this.students = newClassroom;
     this.saveToStorage();
   }
