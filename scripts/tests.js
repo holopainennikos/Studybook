@@ -37,4 +37,9 @@ export class Tests {
   saveToStorage() {
     localStorage.setItem(this.#localStorageKey, JSON.stringify(this.tests));
   }
+
+  removeTest(testID) {
+    this.tests = this.tests.filter(t => t.id !== testID);
+    this.saveToStorage(); // Save the updated list to local storage
+  }
 }

@@ -39,10 +39,10 @@ function renderHomeworkGrid() {
 
   homeworkHTML += `
     <!-- Button to open the menu -->
-    <button id="add-homework-btn" class="add-homework-button">Add Homework</button>
+    <button id="add-homework-btn" class="add-homework-button js-add-homework-button">Add Homework</button>
 
     <!-- The Modal for adding new homework -->
-    <div id="homework-modal" class="modal">
+    <div id="homework-modal " class="modal homework-modal js-homework-modal">
       <div class="modal-content">
         <span class="close">&times;</span>
         <h2>Add New Homework</h2>
@@ -66,6 +66,7 @@ function renderHomeworkGrid() {
   document.querySelector('.js-homework-container').innerHTML = homeworkHTML;
 
   addRemoveHomeworkButtonListeners();
+  addAddHomeworkButtonListeners();
 }
 
 function addRemoveHomeworkButtonListeners() {
@@ -92,20 +93,83 @@ function renderTestsGrid() {
         <img class="test-image" src="${t.logo}">
         <div class="test-subject-name">${t.subject}</div>
         <div class="test-content">${t.contents}</div>
-        <button class="remove-button js-remove-button">&times;</button>
+        <button class="remove-button js-test-remove-button" data-test-id="${t.id}">&times;</button>
       </div>
     `;
 
   });
 
+  testsHTML += `
+    <!-- Button to open the menu -->
+    <button id="add-test-btn" class="add-test-button js-add-test-button">Add Test</button>
+
+    <!-- The Modal for adding new test -->
+    <div id="test-modal" class="modal test-modal js-test-modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Add New Test</h2>
+        <form id="add-test-form">
+          <label for="subject">Subject:</label>
+          <select id="subject" name="subject">
+            <option value="Math">Math</option>
+            <option value="Finnish">Finnish</option>
+            <option value="English">English</option>
+          </select><br><br>
+
+          <label for="contents">Contents:</label><br>
+          <textarea id="contents" name="contents" rows="4" cols="50"></textarea><br><br>
+
+          <button type="submit">Add test</button>
+        </form>
+      </div>
+    </div>
+  `
+
 
   document.querySelector('.js-test-container').innerHTML = testsHTML;
+
+  addAddTestButtonListeners();
+  addRemoveTestButtonListeners();
+}
+
+function addRemoveTestButtonListeners() {
+  
+  document.querySelectorAll('.js-remove-test-button').forEach((button) => {
+    button.addEventListener('click', () => {
+      const { testId } = button.dataset;
+      
+      tests.removeTest(testId);
+      renderTestsGrid();
+    })
+  })
+
 }
 
 
+function addAddHomeworkButtonListeners() {
+  document.querySelector('.js-add-homework-button').onclick = function() {
+    const modal = document.querySelector('.js-homework-modal');
+    if (modal.style.display === "none" || modal.style.display === "") {
+      modal.style.display = "block";
+    } else {
+      modal.style.display = "none";
+    }
+  }
+}
 
-//print(homework);
-
+function addAddTestButtonListeners() {
+  document.querySelector('.js-add-test-button').onclick = function() {
+    const modal = document.querySelector('.js-test-modal');
+    if (modal.style.display === "none" || modal.style.display === "") {
+      modal.style.display = "block";
+    } else {
+      modal.style.display = "none";
+    }
+  }
+}
 
 renderHomeworkGrid();
 renderTestsGrid();
+
+
+
