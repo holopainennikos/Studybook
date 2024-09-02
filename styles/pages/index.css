@@ -1,21 +1,22 @@
 /* Flexbox container for the main blocks layout */
 .blocks-grid {
-  display: flex; 
+  display: flex;
   flex-direction: row;
-  column-gap: 30px; 
-  padding-top: 30px; 
+  column-gap: 30px;
+  padding-top: 30px;
 }
 
 /* Styles for the left and right blocks */
 .block-right,
 .block-left {
-  border: solid 1px red; 
-  border-radius: 10px; 
-  margin-top: 50px; 
-  display: flex; /* Flexbox layout for internal elements */
-  flex-direction: column; 
-  flex: 1; 
-  row-gap: 30px; 
+  border: solid 1px red;
+  border-radius: 10px;
+  margin-top: 50px;
+  display: flex;
+  /* Flexbox layout for internal elements */
+  flex-direction: column;
+  flex: 1;
+  row-gap: 30px;
   justify-content: space-between;
 }
 
@@ -23,98 +24,93 @@
 .block-center {
   display: flex;
   flex-direction: column;
-  border: solid 1px red; 
-  border-radius: 10px; 
-  margin-top: 50px; 
+  border: solid 1px red;
+  border-radius: 10px;
+  margin-top: 50px;
   /*background-color: rgb(118, 146, 255);  Light blue background color */
   flex: 1;
 }
 
-/* Styles for the class personnel section */
-.class-personnel {
-  border: solid 1px blue; 
-  border-radius: 10px; 
-  background-color: rgb(118, 146, 255); 
-  row-gap: 30px; 
-}
+
 
 /* Styles for the schedule section */
-.schedule { 
-  display: flex; 
-  flex-direction: column; 
+.schedule {
+  display: flex;
+  flex-direction: column;
   /*background-color: rgb(118, 146, 255); */
-  border: solid 1px blue; 
-  border-radius: 10px; 
+  border: solid 1px blue;
+  border-radius: 10px;
   row-gap: 1px;
 }
 
 /* Styles for the homework and tests sections */
 .homework,
 .tests {
-  border: solid 1px blue; 
-  border-radius: 10px; 
-  display: flex; 
-  flex-direction: column; 
-  flex: 1; 
+  border: solid 1px blue;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   /*background-color: rgb(118, 146, 255); */
 }
 
-/* Styles for the columns inside each row */
-.column1,
-.column2,
-.column3,
-.column4,
-.column5 {
-  display: flex; 
-  flex-direction: column; 
-  border: solid 1px red; 
-  border-radius: 10px; 
-  height: 100px; 
-  width: 100px; 
-}
 
-/* Styles for the rows containing the columns */
-.row1,
-.row2,
-.row3,
-.row4 {
-  display: grid; 
-  grid-template-columns: repeat(5, 1fr); /* Five equal-width columns */
-  row-gap: 10px; 
-  column-gap: 10px; 
-  border: solid 1px blue; 
-  border-radius: 10px; 
-}
-
-/* Styles for the teacher row */
-.teacher-row {
-  display: flex; 
-  align-items: center; 
-  justify-content: space-between; 
-  border: solid 1px blue; 
-  border-radius: 10px; 
-  margin: auto; 
+/* Styles for the class personnel section */
+.classroom {
+  border: solid 1px blue;
+  border-radius: 10px;
+  background-color: rgb(118, 146, 255);
+  row-gap: 30px;
+  display: flex;
+  min-height: 200px;
+  /* Ensure the classroom is tall enough to see drops */
 }
 
 /* Styles for the teacher container */
 .teacher {
-  display: flex; 
-  align-items: center; 
-  justify-content: space-between; 
-  border: solid 1px blue; 
-  border-radius: 10px; 
-  margin: auto; 
-  height: 100px; 
-  width: 100px; 
+  border: solid 1px blue;
+  border-radius: 10px;
+  margin: auto;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  position: absolute;
+  vertical-align: top;
+}
+
+.students {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  position: relative;
+  /* Make the students container relative */
+  min-height: 400px;
+  /* Optional: Ensure it has a minimum height */
+}
+
+.student-image {
+  border-radius: 20%;
+  height: 60px;
+  width: 60px;
+  background-color: aqua;
+  position: absolute;
+  /* Enable absolute positioning for student images */
+  cursor: move;
+  text-align: center;
+}
+
+.dragging {
+  opacity: 0.5;
+  border: 2px dashed #000;
 }
 
 /* Styles for the div containing the information of a shedule period */
 .schedule-selector-container {
   display: flex;
   flex-direction: row;
-  border: solid 1px blue; 
-  border-radius: 5px; 
-  height: 100%; 
+  border: solid 1px blue;
+  border-radius: 5px;
+  height: 100%;
   column-gap: 10px;
   justify-content: space-between;
 }
@@ -122,9 +118,9 @@
 .schedule-period-container {
   display: flex;
   flex-direction: column;
-  border: solid 1px blue; 
-  border-radius: 5px; 
-  height: 100%; 
+  border: solid 1px blue;
+  border-radius: 5px;
+  height: 100%;
   column-gap: 10px;
   margin-right: 5px;
   margin-left: 5px;
@@ -150,9 +146,9 @@
 .schedule-period {
   display: flex;
   flex-direction: row;
-  border: solid 1px black; 
-  border-radius: 5px; 
-  height: 100%; 
+  border: solid 1px black;
+  border-radius: 5px;
+  height: 100%;
   column-gap: 10px;
   background-color: rgb(118, 146, 255);
   box-shadow: inset 0 0 15px 5px rgb(109, 132, 224)
@@ -185,23 +181,12 @@
   column-gap: 10px;
 }
 
-/* Styles for the student images */
-.student-image {
-  width: 100%; 
-}
-
-/* Styles for the student names */
-.student-name {
-  position: relative; 
-  top: -100%; /* Positioning the name above the image */
-}
-
 /* Styles for the homework, test, and feed images */
 .homework-image,
 .test-image,
 .feed-image,
 .period-image {
-  width: 50px; 
+  width: 50px;
   height: 50px;
 }
 
@@ -212,19 +197,20 @@
 
 /* Additional styles for the feed image */
 .feed-image {
-  margin-right: 5px; 
-  margin-left: 5px; 
-  border: solid 2px; 
-  border-radius: 50px; /* Circular shape */
+  margin-right: 5px;
+  margin-left: 5px;
+  border: solid 2px;
+  border-radius: 50px;
+  /* Circular shape */
 }
 
 /* Styles for the homework and test subjects */
 .homework-subject,
 .test-subject {
-  display: flex; 
-  border: solid 1px black; 
-  border-radius: 10px; 
-  justify-content: start; 
+  display: flex;
+  border: solid 1px black;
+  border-radius: 10px;
+  justify-content: start;
   align-items: center;
   column-gap: 20px;
   background-color: rgb(118, 146, 255);
@@ -244,12 +230,12 @@
 
 /* Styles for the feed posts */
 .feed-post {
-  display: flex; 
-  flex-direction: row; 
-  flex: 1; 
-  border: solid 1px black; 
-  border-radius: 10px; 
-  padding: 5px 0; 
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  border: solid 1px black;
+  border-radius: 10px;
+  padding: 5px 0;
   min-height: 80px;
   align-items: center;
   background-color: rgb(118, 146, 255);

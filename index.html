@@ -1,329 +1,262 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>StudyBook</title>
 
-    <!-- This code is needed for responsive design to work.
+<head>
+  <title>StudyBook</title>
+
+  <!-- This code is needed for responsive design to work.
       (Responsive design = make the website look good on
       smaller screen sizes like a phone or a tablet). -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Load a font called Roboto from Google Fonts. Uncomment these if you need the font. -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> -->
+  <!-- Load a font called Roboto from Google Fonts. Uncomment these if you need the font. -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> -->
 
-    <!-- Link to external CSS files for shared and page-specific styles -->
-    <link rel="stylesheet" href="styles/shared/general.css">
-    <link rel="stylesheet" href="styles/shared/header.css">
-    <link rel="stylesheet" href="styles/pages/index.css">
-  </head>
-  <body>
-    <!-- Header section containing the logo and navigation buttons -->
-    <div class="header">
-      <!-- Left section of the header, contains the logos -->
-      <div class="header-left-section">
-        <!-- Link to home page -->
-        <a href="index.html" class="header-link">
-          <!-- StudyBook logo -->
-          <img class="studybook-logo" src="images/studybook logo.png">
-          <!-- Mobile-specific logo, can be uncommented if needed -->
-          <!-- <img class="amazon-mobile-logo" src="images/amazon-mobile-logo-white.png"> -->
-        </a>
-        <button class="header-button">Students</button>
-        <button class="header-button">Staff</button>
-      </div>
+  <!-- Link to external CSS files for shared and page-specific styles -->
+  <link rel="stylesheet" href="styles/shared/general.css">
+  <link rel="stylesheet" href="styles/shared/header.css">
+  <link rel="stylesheet" href="styles/pages/index.css">
+</head>
 
-      <!-- Middle section of the header, can be used for search or other buttons -->
-      <div class="header-middle-section">
-        <button class="header-button">Button</button>
-      </div>
-
-      <!-- Right section of the header, usually for user account or additional options -->
-      <div class="header-right-section">
-        <button class="header-button">Button</button>
-      </div>
+<body>
+  <!-- Header section containing the logo and navigation buttons -->
+  <div class="header">
+    <!-- Left section of the header, contains the logos -->
+    <div class="header-left-section">
+      <!-- Link to home page -->
+      <a href="index.html" class="header-link">
+        <!-- StudyBook logo -->
+        <img class="studybook-logo" src="images/studybook logo.png">
+        <!-- Mobile-specific logo, can be uncommented if needed -->
+        <!-- <img class="amazon-mobile-logo" src="images/amazon-mobile-logo-white.png"> -->
+      </a>
+      <button class="header-button">Students</button>
+      <button class="header-button">Staff</button>
     </div>
 
-    <!-- Main content area -->
-    <div class="main">
-      <!-- Grid layout for organizing blocks of content -->
-      <div class="blocks-grid js-products-grid">
-        
-        <!-- Left block, contains schedule and class personnel -->
-        <div class="block-left">
-          <!-- Schedule section with different periods and subjects -->
-          <div class="schedule">
-            <div class="schedule-selector-container">
-              <div class="schedule-back-button-container">
-                <button class="schedule-back-button">arrow left</button>
-              </div>
-              <div class="schedule-day">
-                Today
-              </div>
-              <div class="schedule-forward-button-container">
-                <button class="schedule-back-button">arrow right</button>
-              </div>
-            </div>
-            <div class="schedule-period-container">
-              <div class="schedule-period">
-                <div class="period-time">
-                  <div>8:00</div>
-                </div>
-                <div class="period-info">
-                  <img class="period-image" src="images/studybook logo.jpg">
-                  <div>Maths</div>
-                </div>
-              </div>
-              <!-- Additional periods -->
-              <div class="schedule-period">
-                <div class="period-time">
-                  <div>8:45</div>
-                </div>
-                <div class="period-info">
-                  <img class="period-image" src="images/studybook logo.jpg">
-                  <div>Finnish</div>
-                </div>
-              </div>
-              <div class="schedule-recess">
-                <div class="period-time">
-                  <div>9:30</div>
-                </div>
-                <div class="period-info">
-                  <div class="recess-text">Recess</div>
-                </div>
-              </div>
-              <div class="schedule-period">
-                <div class="period-time">
-                  <div>10:00</div>
-                </div>
-                <div class="period-info">
-                  <img class="period-image" src="images/studybook logo.jpg">
-                  <div>English</div>
-                </div>
-              </div>
-              <div class="schedule-period">
-                <div class="period-time">
-                  <div>10:45</div>
-                </div>
-                <div class="period-info">
-                  <img class="period-image" src="images/studybook logo.jpg">
-                  <div>Music</div>
-                </div>
-              </div>
-              <div class="schedule-recess">
-                <div class="period-time">
-                  <div>11:30</div>
-                </div>
-                <div class="period-info">
-                  <div class="recess-text">Lunch</div>
-                </div>
-              </div>
-              <div class="schedule-recess">
-                <div class="period-time">
-                  <div>11:50</div>
-                </div>
-                <div class="period-info">
-                  <div class="recess-text">Recess</div>
-                </div>
-              </div>
-              <div class="schedule-period">
-                <div class="period-time">
-                  <div>12:15</div>
-                </div>
-                <div class="period-info">
-                  <img class="period-image" src="images/studybook logo.jpg">
-                  <div>History</div>
-                </div>
-              </div>
-              <div class="schedule-recess">
-                <div class="period-time">
-                  <div>13:00</div>
-                </div>
-                <div class="period-info">
-                  <div class="recess-text">Recess</div>
-                </div>
-              </div>
-              <div class="schedule-period">
-                <div class="period-time">
-                  <div>13:15</div>
-                </div>
-                <div class="period-info">
-                  <img class="period-image" src="images/studybook logo.jpg">
-                  <div>Physical education</div>
-                </div>
-              </div>
-              <div class="schedule-period">
-                <div class="period-time">
-                  <div>14:00</div>
-                </div>
-                <div class="period-info">
-                  <img class="period-image" src="images/studybook logo.jpg">
-                  <div>Physical education</div>
-                </div>
-              </div>
-          </div>
-          </div>
+    <!-- Middle section of the header, can be used for search or other buttons -->
+    <div class="header-middle-section">
+      <button class="header-button">Button</button>
+    </div>
 
-          <!-- Class personnel section -->
-          <div class="class-personnel js-class-personnel">
-            <!-- Teacher information -->
-            <div class="teacher-row">
-              <div class="teacher">teacher</div>
+    <!-- Right section of the header, usually for user account or additional options -->
+    <div class="header-right-section">
+      <button class="header-button">Button</button>
+    </div>
+  </div>
+
+  <!-- Main content area -->
+  <div class="main">
+    <!-- Grid layout for organizing blocks of content -->
+    <div class="blocks-grid js-products-grid">
+
+      <!-- Left block, contains schedule and class personnel -->
+      <div class="block-left">
+        <!-- Schedule section with different periods and subjects -->
+        <div class="schedule">
+          <div class="schedule-selector-container">
+            <div class="schedule-back-button-container">
+              <button class="schedule-back-button">arrow left</button>
             </div>
-            
-            <!-- Row 1 of students -->
-            <div class="row1">
-              <div class="column1"> 
-                <!-- Student image and name -->
-                <img class="student-image" src="images/student-M.png"> 
-                <div class="student-name">John</div>
-              </div>
-              <div class="column2"> 
-                <img class="student-image" src="images/student-F.png"> 
-                <div class="student-name">Amanda</div>
-              </div>
-              <div class="column3"> 
-                <img class="student-image" src="images/student-M.png"> 
-                <div class="student-name">student3</div>
-              </div>
-              <div class="column4"> 
-                <img class="student-image" src="images/student-F.png"> 
-                <div class="student-name">student4</div>
-              </div>
-              <div class="column5"> 
-                <img class="student-image" src="images/student-M.png"> 
-                <div class="student-name">student5</div>
-              </div>
+            <div class="schedule-day">
+              Today
             </div>
-            
-            <!-- Additional rows of students -->
-            <div class="row2">
-              <div class="column1"> 
-                <img class="student-image" src="images/student-M.png"> 
-                <div class="student-name">student1</div>
+            <div class="schedule-forward-button-container">
+              <button class="schedule-back-button">arrow right</button>
+            </div>
+          </div>
+          <div class="schedule-period-container">
+            <div class="schedule-period">
+              <div class="period-time">
+                <div>8:00</div>
               </div>
-              <div class="column2"> 
-                <img class="student-image" src="images/student-F.png"> 
-                <div class="student-name">student2</div>
-              </div>
-              <div class="column3"> 
-                <img class="student-image" src="images/student-M.png"> 
-                <div class="student-name">student3</div>
-              </div>
-              <div class="column4"> 
-                <img class="student-image" src="images/student-F.png"> 
-                <div class="student-name">student4</div>
-              </div>
-              <div class="column5"> 
-                <img class="student-image" src="images/student-M.png"> 
-                <div class="student-name">student5</div>
+              <div class="period-info">
+                <img class="period-image" src="images/studybook logo.jpg">
+                <div>Maths</div>
               </div>
             </div>
-            <div class="row3">
-              <div class="column1"> 
-                <img class="student-image" src="images/student-M.png"> 
-                <div class="student-name">student1</div>
+            <!-- Additional periods -->
+            <div class="schedule-period">
+              <div class="period-time">
+                <div>8:45</div>
               </div>
-              <div class="column2"> 
-                <img class="student-image" src="images/student-F.png"> 
-                <div class="student-name">student2</div>
-              </div>
-              <div class="column3"> 
-                <img class="student-image" src="images/student-M.png"> 
-                <div class="student-name">student3</div>
-              </div>
-              <div class="column4"> 
-                <img class="student-image" src="images/student-F.png"> 
-                <div class="student-name">student4</div>
-              </div>
-              <div class="column5"> 
-                <img class="student-image" src="images/student-M.png"> 
-                <div class="student-name">student5</div>
+              <div class="period-info">
+                <img class="period-image" src="images/studybook logo.jpg">
+                <div>Finnish</div>
               </div>
             </div>
-            <div class="row4">
-              <div class="column1"> 
-                <img class="student-image" src="images/student-M.png"> 
-                <div class="student-name">student1</div>
+            <div class="schedule-recess">
+              <div class="period-time">
+                <div>9:30</div>
               </div>
-              <div class="column2"> 
-                <img class="student-image" src="images/student-F.png"> 
-                <div class="student-name">student2</div>
+              <div class="period-info">
+                <div class="recess-text">Recess</div>
               </div>
-              <div class="column3"> 
-                <img class="student-image" src="images/student-M.png"> 
-                <div class="student-name">student3</div>
+            </div>
+            <div class="schedule-period">
+              <div class="period-time">
+                <div>10:00</div>
               </div>
-              <div class="column4"> 
-                <img class="student-image" src="images/student-F.png"> 
-                <div class="student-name">student4</div>
+              <div class="period-info">
+                <img class="period-image" src="images/studybook logo.jpg">
+                <div>English</div>
               </div>
-              <div class="column5"> 
-                <img class="student-image" src="images/student-M.png"> 
-                <div class="student-name">student5</div>
+            </div>
+            <div class="schedule-period">
+              <div class="period-time">
+                <div>10:45</div>
+              </div>
+              <div class="period-info">
+                <img class="period-image" src="images/studybook logo.jpg">
+                <div>Music</div>
+              </div>
+            </div>
+            <div class="schedule-recess">
+              <div class="period-time">
+                <div>11:30</div>
+              </div>
+              <div class="period-info">
+                <div class="recess-text">Lunch</div>
+              </div>
+            </div>
+            <div class="schedule-recess">
+              <div class="period-time">
+                <div>11:50</div>
+              </div>
+              <div class="period-info">
+                <div class="recess-text">Recess</div>
+              </div>
+            </div>
+            <div class="schedule-period">
+              <div class="period-time">
+                <div>12:15</div>
+              </div>
+              <div class="period-info">
+                <img class="period-image" src="images/studybook logo.jpg">
+                <div>History</div>
+              </div>
+            </div>
+            <div class="schedule-recess">
+              <div class="period-time">
+                <div>13:00</div>
+              </div>
+              <div class="period-info">
+                <div class="recess-text">Recess</div>
+              </div>
+            </div>
+            <div class="schedule-period">
+              <div class="period-time">
+                <div>13:15</div>
+              </div>
+              <div class="period-info">
+                <img class="period-image" src="images/studybook logo.jpg">
+                <div>Physical education</div>
+              </div>
+            </div>
+            <div class="schedule-period">
+              <div class="period-time">
+                <div>14:00</div>
+              </div>
+              <div class="period-info">
+                <img class="period-image" src="images/studybook logo.jpg">
+                <div>Physical education</div>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Center block, usually for the main feed or content -->
-        <div class="block-center">
-          <div class="feed-header-container">
-            <!-- Placeholder for the main feed content -->
-            <h1>FEED</h1>
+        <!-- Class personnel section -->
+        <div class="classroom jsclassroom">
+          <div class="teacher">
+            <p>Teacher</p>
           </div>
-          <div class="feed-container">
-            <div class="feed-post">
-              <!-- Image and contents of the post -->
-              <img class="feed-image" src="images/studybook logo.jpg">
-              <div class="post-contents">
-                <div class="post-text">
-                  Hello world! This is the first post that I, the teacher, have posted on this classroom.
+          <div class="students">
+            <p class="student-image draggable" draggable="true">Student 1</p>
+            <p class="student-image draggable" draggable="true">Student 2</p>
+            <p class="student-image draggable" draggable="true">Student 3</p>
+            <p class="student-image draggable" draggable="true">Student 4</p>
+            <p class="student-image draggable" draggable="true">Student 5</p>
+            <p class="student-image draggable" draggable="true">Student 6</p>
+            <p class="student-image draggable" draggable="true">Student 7</p>
+            <p class="student-image draggable" draggable="true">Student 8</p>
+            <p class="student-image draggable" draggable="true">Student 9</p>
+            <p class="student-image draggable" draggable="true">Student 10</p>
+            <p class="student-image draggable" draggable="true">Student 11</p>
+            <p class="student-image draggable" draggable="true">Student 12</p>
+            <p class="student-image draggable" draggable="true">Student 13</p>
+            <p class="student-image draggable" draggable="true">Student 14</p>
+            <p class="student-image draggable" draggable="true">Student 15</p>
+            <p class="student-image draggable" draggable="true">Student 16</p>
+            <p class="student-image draggable" draggable="true">Student 17</p>
+            <p class="student-image draggable" draggable="true">Student 18</p>
+            <p class="student-image draggable" draggable="true">Student 19</p>
+            <p class="student-image draggable" draggable="true">Student 20</p>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Center block, usually for the main feed or content -->
+      <div class="block-center">
+        <div class="feed-header-container">
+          <!-- Placeholder for the main feed content -->
+          <h1>FEED</h1>
+        </div>
+        <div class="feed-container">
+          <div class="feed-post">
+            <!-- Image and contents of the post -->
+            <img class="feed-image" src="images/studybook logo.jpg">
+            <div class="post-contents">
+              <div class="post-text">
+                Hello world! This is the first post that I, the teacher, have posted on this classroom.
+              </div>
+              <div class="post-impressions">
+                <div class="post-comments">
+                  <img class="post-impression-icon" src="images/comment.png">
+                  <div>5</div>
                 </div>
-                <div class="post-impressions">
-                  <div class="post-comments">
-                    <img class="post-impression-icon" src="images/comment.png">
-                    <div>5</div>
-                  </div>
-                  <div class="post-seen">
-                    <img class="post-impression-icon" src="images/seen.png">
-                    <div>20</div>
-                  </div>
+                <div class="post-seen">
+                  <img class="post-impression-icon" src="images/seen.png">
+                  <div>20</div>
                 </div>
               </div>
             </div>
+          </div>
         </div>
+      </div>
+
+      <!-- Right block, containing homework and tests sections -->
+      <div class="block-right">
+        <!-- Homework section -->
+        <div class="homework">
+          <div class="homework-header-container">
+            <h2>HOMERWORK</h2>
+          </div>
+          <!-- Homework for different subjects -->
+          <div class="homework-container js-homework-container">
+
+          </div>
         </div>
 
-        <!-- Right block, containing homework and tests sections -->
-        <div class="block-right">
-          <!-- Homework section -->
-          <div class="homework">
-            <div class="homework-header-container">
-              <h2>HOMERWORK</h2> 
-            </div>
-            <!-- Homework for different subjects -->
-            <div class="homework-container js-homework-container">
-              
-            </div>
+        <!-- Tests section -->
+        <div class="tests">
+          <div class="test-header-container">
+            <h2>TESTS</h2>
           </div>
-          
-          <!-- Tests section -->
-          <div class="tests">
-            <div class="test-header-container">
-              <h2>TESTS</h2>
-            </div>
-            <!-- Tests for different subjects -->
-            <div class="test-container js-test-container">
-              
-            </div>
+          <!-- Tests for different subjects -->
+          <div class="test-container js-test-container">
+
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Link to the external JavaScript file for page-specific scripts -->
-    <script type="module" src="scripts/index.js"></script>
-  </body>
+  <!-- Link to the external JavaScript file for page-specific scripts -->
+  <script type="module" src="scripts/index.js"></script>
+  <script type="module" src="scripts/classroom.js"></script>
+</body>
+
 </html>
