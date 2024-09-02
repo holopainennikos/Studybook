@@ -293,3 +293,8 @@ h1 {
   margin: 0px;
   padding: 0px;
 }
+
+.homework-modal,
+.test-modal {
+  display: none;
+}

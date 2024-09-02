@@ -31,7 +31,7 @@ function renderHomeworkGrid() {
         <img class="homework-image" src="${hw.logo}">
         <div class="homework-subject-name">${hw.subject}</div>
         <div class="homework-content">${hw.contents}</div>
-        <button class="remove-button js-homework-remove-button" data-homework-id="${hw.id}">&times;</button>
+        <button class="remove-button js-remove-homework-button" data-homework-id="${hw.id}">&times;</button>
       </div>
     `;
 
@@ -39,17 +39,10 @@ function renderHomeworkGrid() {
 
   homeworkHTML += `
     <!-- Button to open the menu -->
-<<<<<<< HEAD
-    <button id="add-homework-btn" class="add-homework-button">Add Homework</button>
-
-    <!-- The Modal for adding new homework -->
-    <div id="homework-modal" class="modal">
-=======
     <button id="add-homework-btn" class="add-homework-button js-add-homework-button">Add Homework</button>
 
     <!-- The Modal for adding new homework -->
     <div id="homework-modal " class="modal homework-modal js-homework-modal">
->>>>>>> lassi
       <div class="modal-content">
         <span class="close">&times;</span>
         <h2>Add New Homework</h2>
@@ -73,10 +66,7 @@ function renderHomeworkGrid() {
   document.querySelector('.js-homework-container').innerHTML = homeworkHTML;
 
   addRemoveHomeworkButtonListeners();
-<<<<<<< HEAD
-=======
   addAddHomeworkButtonListeners();
->>>>>>> lassi
 }
 
 function addRemoveHomeworkButtonListeners() {
@@ -103,11 +93,7 @@ function renderTestsGrid() {
         <img class="test-image" src="${t.logo}">
         <div class="test-subject-name">${t.subject}</div>
         <div class="test-content">${t.contents}</div>
-<<<<<<< HEAD
-        <button class="remove-button js-remove-button">&times;</button>
-=======
-        <button class="remove-button js-test-remove-button" data-test-id="${t.id}">&times;</button>
->>>>>>> lassi
+        <button class="remove-button js-remove-test-button" data-test-id="${t.id}">&times;</button>
       </div>
     `;
 
@@ -146,13 +132,6 @@ function renderTestsGrid() {
   addRemoveTestButtonListeners();
 }
 
-<<<<<<< HEAD
-
-
-//print(homework);
-
-
-=======
 function addRemoveTestButtonListeners() {
   
   document.querySelectorAll('.js-remove-test-button').forEach((button) => {
@@ -189,9 +168,5 @@ function addAddTestButtonListeners() {
   }
 }
 
->>>>>>> lassi
 renderHomeworkGrid();
 renderTestsGrid();
-
-
-
