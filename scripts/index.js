@@ -44,7 +44,7 @@ function renderHomeworkGrid() {
     <!-- The Modal for adding new homework -->
     <div id="homework-modal " class="modal homework-modal js-homework-modal">
       <div class="modal-content">
-        <span class="close">&times;</span>
+        <span class="close-button">&times;</span>
         <h2>Add New Homework</h2>
         <form id="add-homework-form">
           <label for="subject">Subject:</label>
