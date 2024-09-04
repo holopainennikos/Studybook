@@ -31,8 +31,22 @@ classrooms.forEach(classroom => {
     if (!draggable) return;
 
     // Calculate the new position of the dragged element
-    const x = e.clientX - draggable.startX;
-    const y = e.clientY - draggable.startY;
+    let x = e.clientX - draggable.startX;
+    let y = e.clientY - draggable.startY;
+
+    // Get the boundaries of the classroom and the draggable element
+    const classroomRect = classroom.getBoundingClientRect();
+    const draggableRect = draggable.getBoundingClientRect();
+
+    // Check boundaries and adjust x and y to prevent overflow
+    if (x < 0) x = 0; // Prevent dragging past the left edge
+    if (y < 0) y = 0; // , Past the top edge
+    if (x + draggableRect.width > classroomRect.width) {
+      x = classroomRect.width - draggableRect.width; // Prevent dragging past the right edge
+    }
+    if (y + draggableRect.height > classroomRect.height) {
+      y = classroomRect.height - draggableRect.height; // Prevent dragging past the bottom edge
+    }
 
     // Set the position of the dragged element
     draggable.style.left = `${x}px`;
