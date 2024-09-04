@@ -44,7 +44,7 @@ function renderHomeworkGrid() {
     <!-- The Modal for adding new homework -->
     <div id="homework-modal " class="modal homework-modal js-homework-modal">
       <div class="modal-content">
-        <span class="close-button">&times;</span>
+        <button class="close-button">&times;</button>
         <h2>Add New Homework</h2>
         <form id="add-homework-form">
           <label for="subject">Subject:</label>
@@ -52,6 +52,8 @@ function renderHomeworkGrid() {
             <option value="Math">Math</option>
             <option value="Finnish">Finnish</option>
             <option value="English">English</option>
+            <option value="Physical Education">Physical Education</option>
+            <option value="Music">Music</option>
           </select><br><br>
 
           <label for="contents">Contents:</label><br>
@@ -106,7 +108,7 @@ function renderTestsGrid() {
     <!-- The Modal for adding new test -->
     <div id="test-modal" class="modal test-modal js-test-modal">
       <div class="modal-content">
-        <span class="close">&times;</span>
+        <button class="close-button">&times;</button>
         <h2>Add New Test</h2>
         <form id="add-test-form">
           <label for="subject">Subject:</label>
