@@ -46,9 +46,9 @@ function renderHomeworkGrid() {
       <div class="modal-content">
         <button class="close-button">&times;</button>
         <h2>Add New Homework</h2>
-        <form id="add-homework-form">
+        <form id="add-homework-form" class="js-add-homework-form">
           <label for="subject">Subject:</label>
-          <select id="subject" name="subject">
+          <select id="subject" class="js-subject" name="subject">
             <option value="Math">Math</option>
             <option value="Finnish">Finnish</option>
             <option value="English">English</option>
@@ -57,7 +57,7 @@ function renderHomeworkGrid() {
           </select><br><br>
 
           <label for="contents">Contents:</label><br>
-          <textarea id="contents" name="contents" rows="4" cols="50"></textarea><br><br>
+          <textarea id="contents" class="js-contents" name="contents" rows="4" cols="50"></textarea><br><br>
 
           <button type="submit">Add Homework</button>
         </form>
@@ -130,6 +130,7 @@ function renderTestsGrid() {
 
   document.querySelector('.js-test-container').innerHTML = testsHTML;
 
+  addSubmitHomeworkListeners();
   addAddTestButtonListeners();
   addRemoveTestButtonListeners();
 }
@@ -168,6 +169,48 @@ function addAddTestButtonListeners() {
       modal.style.display = "none";
     }
   }
+}
+
+function addSubmitHomeworkListeners() {
+  let form = document.querySelector('.js-add-homework-form');
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+     // Get form values
+    const subject = document.querySelector('.js-subject').value;
+    const contents = document.querySelector('.js-contents').value;
+
+    // Map subject to a logo (this can be expanded)
+    const logos = {
+      "Math": "images/studybook logo.jpg",
+      "Finnish": "images/studybook logo.jpg",
+      "English": "images/studybook logo.jpg"
+    };
+
+    // Create a new homework object
+    const newHomework = {
+      id: Date.now().toString(), // Unique ID
+      subject: subject,
+      logo: logos[subject], // Automatically assign the logo based on subject
+      contents: contents,
+      dueDate: "" // Set this to empty or handle it based on additional input
+    };
+
+    // Add the new homework to the list
+    homework.homeworks.push(newHomework);
+
+    // Save to local storage
+    homework.saveToStorage();
+
+    // Re-render the homework grid
+    renderHomeworkGrid();
+
+    // Close the modal
+    modal.style.display = "none";
+
+    // Clear the form
+    form.reset();
+  });
 }
 
 renderHomeworkGrid();
