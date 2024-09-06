@@ -48,7 +48,7 @@ function renderHomeworkGrid() {
         <h2>Add New Homework</h2>
         <form id="add-homework-form" class="js-add-homework-form">
           <label for="subject">Subject:</label>
-          <select id="subject" class="js-subject" name="subject">
+          <select id="subject" class="js-homework-subject" name="subject">
             <option value="Math">Math</option>
             <option value="Finnish">Finnish</option>
             <option value="English">English</option>
@@ -57,7 +57,7 @@ function renderHomeworkGrid() {
           </select><br><br>
 
           <label for="contents">Contents:</label><br>
-          <textarea id="contents" class="js-contents" name="contents" rows="4" cols="50"></textarea><br><br>
+          <textarea id="contents" class="js-homework-contents" name="contents" rows="4" cols="50"></textarea><br><br>
 
           <button type="submit">Add Homework</button>
         </form>
@@ -67,6 +67,7 @@ function renderHomeworkGrid() {
 
   document.querySelector('.js-homework-container').innerHTML = homeworkHTML;
 
+  addSubmitHomeworkListeners();
   addRemoveHomeworkButtonListeners();
   addAddHomeworkButtonListeners();
 }
@@ -76,8 +77,6 @@ function addRemoveHomeworkButtonListeners() {
   document.querySelectorAll('.js-remove-homework-button').forEach((button) => {
     button.addEventListener('click', () => {
       const { homeworkId } = button.dataset;
-      console.log(homework);
-      console.log(homeworkId);
       homework.removeHomework(homeworkId);
       renderHomeworkGrid();
     })
@@ -110,16 +109,16 @@ function renderTestsGrid() {
       <div class="modal-content">
         <button class="close-button">&times;</button>
         <h2>Add New Test</h2>
-        <form id="add-test-form">
+        <form id="add-test-form" class="js-add-test-form">
           <label for="subject">Subject:</label>
-          <select id="subject" name="subject">
+          <select id="subject" class="js-test-subject" name="subject">
             <option value="Math">Math</option>
             <option value="Finnish">Finnish</option>
             <option value="English">English</option>
           </select><br><br>
 
           <label for="contents">Contents:</label><br>
-          <textarea id="contents" name="contents" rows="4" cols="50"></textarea><br><br>
+          <textarea id="contents" class="js-test-contents" name="contents" rows="4" cols="50"></textarea><br><br>
 
           <button type="submit">Add test</button>
         </form>
@@ -130,7 +129,7 @@ function renderTestsGrid() {
 
   document.querySelector('.js-test-container').innerHTML = testsHTML;
 
-  addSubmitHomeworkListeners();
+  addSubmitTestListeners();
   addAddTestButtonListeners();
   addRemoveTestButtonListeners();
 }
@@ -140,7 +139,6 @@ function addRemoveTestButtonListeners() {
   document.querySelectorAll('.js-remove-test-button').forEach((button) => {
     button.addEventListener('click', () => {
       const { testId } = button.dataset;
-      
       tests.removeTest(testId);
       renderTestsGrid();
     })
@@ -176,34 +174,36 @@ function addSubmitHomeworkListeners() {
   form.addEventListener('submit', function (event) {
     event.preventDefault();
 
-     // Get form values
-    const subject = document.querySelector('.js-subject').value;
-    const contents = document.querySelector('.js-contents').value;
+    // Get form values
+    const subject = document.querySelector('.js-homework-subject').value;
+    const contents = document.querySelector('.js-homework-contents').value;
 
-    // Map subject to a logo (this can be expanded)
-    const logos = {
-      "Math": "images/studybook logo.jpg",
-      "Finnish": "images/studybook logo.jpg",
-      "English": "images/studybook logo.jpg"
-    };
-
-    // Create a new homework object
-    const newHomework = {
-      id: Date.now().toString(), // Unique ID
-      subject: subject,
-      logo: logos[subject], // Automatically assign the logo based on subject
-      contents: contents,
-      dueDate: "" // Set this to empty or handle it based on additional input
-    };
-
-    // Add the new homework to the list
-    homework.homeworks.push(newHomework);
-
-    // Save to local storage
-    homework.saveToStorage();
+    homework.addHomework(subject, contents);
 
     // Re-render the homework grid
     renderHomeworkGrid();
+
+    // Close the modal
+    modal.style.display = "none";
+
+    // Clear the form
+    form.reset();
+  });
+}
+
+function addSubmitTestListeners() {
+  let form = document.querySelector('.js-add-test-form');
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    // Get form values
+    const subject = document.querySelector('.js-test-subject').value;
+    const contents = document.querySelector('.js-test-contents').value;
+
+    tests.addTest(subject, contents);
+
+    // Re-render the homework grid
+    renderTestsGrid();
 
     // Close the modal
     modal.style.display = "none";
