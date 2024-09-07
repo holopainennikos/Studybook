@@ -18,18 +18,6 @@ button {
   cursor: pointer;
 }
 
-.remove-button {
-  background-color: red;
-  border: solid 1px black;
-  border-radius: 3px;
-  justify-content: end;
-  position: absolute;
-  right: 30px;
-  color: white;
-  text-align: center;
-  box-shadow: 0 0 2px black;
-}
-
 .remove-button:hover {
   background-color: darkred;
   transition: 0.25s;
