@@ -23,3 +23,8 @@ button {
   transition: 0.25s;
   font-weight: 700;
 }
+
+h1, h2 {
+  margin: 0px;
+  padding: 0px;
+}

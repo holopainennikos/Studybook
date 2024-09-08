@@ -33,9 +33,7 @@
   flex: 1;
 }
 
-
-
-/* Styles for the schedule section */
+/* Styles for the div container that holds the schedule header and the schedule */
 .schedule {
   display: flex;
   flex-direction: column;
@@ -45,17 +43,96 @@
   row-gap: 1px;
 }
 
-/* Styles for the homework and tests sections */
-.homework,
-.tests {
-  border: none;
-  border-radius: 10px;
+/* Styles for the div container that holds the selectors and the selected day */
+.schedule-selector-container {
   display: flex;
-  flex-direction: column;
-  flex: 1;
-  /*background-color: rgb(118, 146, 255); */
+  flex-direction: row;
+  border: none;
+  border-radius: 5px;
+  height: 100%;
+  column-gap: 10px;
+  justify-content: space-between;
 }
 
+/* Styles for the back and forward buttons for the schedule day selector */
+.schedule-back-button,
+.schedule-forward-button {
+  border: none;
+  background-color: red;
+  border-radius: 5px;
+  color: white;
+  height: 30px;
+  width: 100px;
+  border-width: 1px;
+  font-size: 12px;
+}
+
+/* Styles for the selected schedule day*/
+.schedule-day {
+  /*align-items: center;*/
+  text-align: center;
+}
+
+/* Styles for the div container for each of the periods for the selected day */
+.schedule-period-container {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 5px;
+  height: 100%;
+  column-gap: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+  background-color: rgb(118, 146, 255);
+}
+
+/* Styles for the div containing the information of a schedule period. Holds the period time and information */
+.schedule-period {
+  display: flex;
+  flex-direction: row;
+  border-top: solid 1px rgb(109, 132, 224);;
+  border-bottom: solid 1px rgb(109, 132, 224);;
+  border-radius: 5px;
+  height: 100%;
+  column-gap: 10px;
+  background-color: rgb(118, 146, 255);
+  box-shadow: inset 0 0 2px rgb(109, 132, 224)
+}
+
+/* Styles for the div containing the times in the schedule */
+.period-time {
+  border-right: solid 1px blue;
+  min-width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles for the div containing the image and the name of the subject in the schedule */
+.period-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+}
+
+/* Styles for the logo of the schedule period */
+.period-image {
+  width: 40px;
+  height: 40px;
+}
+
+/* Styles for the div containing the information for an off period. Holds the time and the info */
+.schedule-recess {
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* Styles for the off periods' text */
+.recess-text {
+  margin-left: 15rem;
+}
 
 /* Styles for the class personnel section */
 .classroom {
@@ -106,98 +183,13 @@
   border: 2px dashed #000;
 }
 
-/* Styles for the div containing the information of a shedule period */
-.schedule-selector-container {
-  display: flex;
-  flex-direction: row;
-  border: none;
-  border-radius: 5px;
-  height: 100%;
-  column-gap: 10px;
-  justify-content: space-between;
-}
-
-.schedule-period-container {
-  display: flex;
-  flex-direction: column;
-  border: none;
-  border-radius: 5px;
-  height: 100%;
-  column-gap: 10px;
-  margin-right: 5px;
-  margin-left: 5px;
-  background-color: rgb(118, 146, 255);
-}
-
-.schedule-back-button,
-.schedule-forward-button {
-  border: none;
-  background-color: red;
-  border-radius: 5px;
-  color: white;
-  height: 30px;
-  width: 100px;
-  border-width: 1px;
-  font-size: 12px;
-}
-
-.schedule-day {
-  /*align-items: center;*/
-  text-align: center;
-}
-
-/* Styles for the div containing the information of a shedule period */
-.schedule-period {
-  display: flex;
-  flex-direction: row;
-  border-top: solid 1px rgb(109, 132, 224);;
-  border-bottom: solid 1px rgb(109, 132, 224);;
-  border-radius: 5px;
-  height: 100%;
-  column-gap: 10px;
-  background-color: rgb(118, 146, 255);
-  box-shadow: inset 0 0 2px rgb(109, 132, 224)
-}
-
-.schedule-recess {
-  display: flex;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.recess-text {
-  margin-left: 15rem;
-}
-
-/* Styles for the div containing the times in the schedule */
-.period-time {
-  border-right: solid 1px blue;
-  min-width: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Styles for the div containing the image and the name of the subject in the schedule */
-.period-info {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  column-gap: 10px;
-}
 
 /* Styles for the homework, test, and feed images */
 .homework-image,
 .test-image,
-.feed-image,
-.period-image {
+.feed-image {
   width: 50px;
   height: 50px;
-}
-
-.period-image {
-  width: 40px;
-  height: 40px;
 }
 
 /* Additional styles for the feed image */
@@ -207,20 +199,6 @@
   border: none;
   border-radius: 50px;
   /* Circular shape */
-}
-
-/* Styles for the homework and test subjects */
-.homework-subject,
-.test-subject {
-  display: flex;
-  border-top: solid 1px rgb(109, 132, 224);;
-  border-bottom: solid 1px rgb(109, 132, 224);;
-  border-radius: 5px;
-  justify-content: start;
-  align-items: center;
-  column-gap: 10px;
-  background-color: rgb(118, 146, 255);
-  box-shadow: inset 0 0 2px rgb(109, 132, 224);
 }
 
 .feed-header-container {
@@ -270,6 +248,40 @@
   margin-left: 20px;
 }
 
+/* Styles for the div containers of the homework and tests sections. Holds the header container and the section containers */
+.homework,
+.tests {
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  /*background-color: rgb(118, 146, 255); */
+}
+
+/* Styles for the div containers of the headers for the homework and test sections. Contains the titles and the buttons for adding a homework/test */
+.test-header-container,
+.homework-header-container {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+/* Styles for the h2 homework and test titles */
+.homework-title,
+.tests-title {
+  flex: 1;
+}
+
+/* Styles for the buttons for adding a homework/test */
+.add-homework-button,
+.add-test-button {
+  border: none;
+  background-color: rgb(118, 146, 255);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Styles for the div containers of the main homework/test sections. Holds the div containers for each homework/test */
 .test-container,
 .homework-container {
   flex: 1;
@@ -279,40 +291,38 @@
   padding-bottom: 5px;
 }
 
-.test-header-container,
-.homework-header-container {
+/* Styles for the div containers for each of the homework and test instances. Holds within the following things:
+- homework/test image
+- homework/test subject
+- homework/test contents
+- homework/test due dates
+- delete buttons */
+.homework-subject,
+.test-subject {
   display: flex;
-  margin-bottom: 5px;
-}
-
-.homework-title,
-.tests-title {
-  flex: 1;
-}
-
-.add-homework-button,
-.add-test-button {
-  border: none;
-  background-color: rgb(118, 146, 255);
+  border-top: solid 1px rgb(109, 132, 224);;
+  border-bottom: solid 1px rgb(109, 132, 224);;
   border-radius: 5px;
-  padding: 10px;
+  justify-content: start;
+  align-items: center;
+  column-gap: 10px;
+  background-color: rgb(118, 146, 255);
+  box-shadow: inset 0 0 2px rgb(109, 132, 224);
 }
 
-.homework-content,
-.test-content {
-  max-width: 400px;
-}
-
+/* Styles for the homework/test subject div */
 .homework-subject-name,
 .test-subject-name {
   width: 50px;
 }
 
-h1, h2 {
-  margin: 0px;
-  padding: 0px;
+/* Styles for the div containing the information about a specific homework/test */
+.homework-content,
+.test-content {
+  max-width: 400px;
 }
 
+/* Styles for the button for removing a homework/test */
 .remove-button {
   background-color: red;
   border: none;
@@ -321,13 +331,14 @@ h1, h2 {
   text-align: center;
 }
 
+/* A way to make sure the modal is invisible when you first load the page */
 .homework-modal,
 .test-modal {
   display: none;
 }
 
 
-/* Modal container */
+/* Styles for the modal that opens when you want to add a homework/test */
 .homework-modal,
 .test-modal {
   position: fixed;
