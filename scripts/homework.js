@@ -38,6 +38,26 @@ export class Homework {
     localStorage.setItem(this.#localStorageKey, JSON.stringify(this.homeworks));
   }
 
+  addHomework(subject, contents) {
+    // Map subject to a logo (this can be expanded)
+    const logos = {
+      "Math": "images/studybook logo.jpg",
+      "Finnish": "images/studybook logo.jpg",
+      "English": "images/studybook logo.jpg"
+    };
+    // Add the new homework to the list
+    this.homeworks.push({
+      id: Date.now().toString(), // Unique ID
+      subject: subject,
+      logo: logos[subject], // Automatically assign the logo based on subject
+      contents: contents,
+      dueDate: "" // Set this to empty or handle it based on additional input
+    });
+
+    // Save to local storage
+    this.saveToStorage();
+  }
+
   removeHomework(homeworkID) {
     this.homeworks = this.homeworks.filter(hw => hw.id !== homeworkID);
     this.saveToStorage(); // Save the updated list to local storage
