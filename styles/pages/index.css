@@ -192,26 +192,20 @@
   height: 50px;
 }
 
-/* Additional styles for the feed image */
-.feed-image {
-  margin-right: 10px;
-  margin-left: 10px;
-  border: none;
-  border-radius: 50px;
-  /* Circular shape */
-}
 
+/* Styles for the div container for the feed's header. Currently only contains the h1 title. */
 .feed-header-container {
   text-align: center;
 }
 
+/* Styles for the div container for the actual feed portion. Contains the posts. */
 .feed-container {
   background-color: rgb(118, 146, 255);
   flex: 1;
   border-radius: 5px;
 }
 
-/* Styles for the feed posts */
+/* Styles for the div containers for specific posts made on the feed. Contains the picture of the poster and contents of the post */
 .feed-post {
   display: flex;
   flex-direction: row;
@@ -226,6 +220,16 @@
   margin-top: 5px;
 }
 
+/* Styles for the profile picture of the poster */
+.feed-image {
+  margin-right: 10px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 50px;
+  /* Circular shape */
+}
+
+/* Styles for the div container for the impression icons for a post */
 .post-impressions {
   display: flex;
   flex-direction: row;
@@ -234,16 +238,19 @@
   bottom: -10px;
 }
 
+/* Styles for the image parts of the post impressions */
 .post-impression-icon {
   width: 15px;
 }
 
+/* Styles for the actual impressions */
 .post-seen,
 .post-comments {
   display: flex;
   margin-right: 20px;
 }
 
+/* Additional styles for the comments portion */
 .post-comments {
   margin-left: 20px;
 }
@@ -324,11 +331,18 @@
 
 /* Styles for the button for removing a homework/test */
 .remove-button {
-  background-color: red;
+  background-color: rgb(221,115,115);
   border: none;
   border-radius: 3px;
   color: white;
   text-align: center;
+}
+
+/* Styles for changing the remove button by hovering it */
+.remove-button:hover {
+  background-color: red;
+  transition: 0.25s;
+  font-weight: 700;
 }
 
 /* A way to make sure the modal is invisible when you first load the page */

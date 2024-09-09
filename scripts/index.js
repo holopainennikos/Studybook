@@ -5,6 +5,8 @@ import { Tests } from '../scripts/tests.js';
 let homework = new Homework('homework1');
 let tests = new Tests('tests1');
 
+// currently obsolete
+// TODO: Add everything under this and call when opening the site
 function renderClassroom() {
 
   let classroomHTML = '';
