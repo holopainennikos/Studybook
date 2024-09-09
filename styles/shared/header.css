@@ -16,21 +16,18 @@
 }
 
 .header-button {
-  border-top: none;
-  border-bottom: none;
-  border-left: solid;
-  border-right: solid;
-  border-color: red;
+  border: none;
   background-color: rgb(59, 53, 97);
   color: white;
   height: 60px;
   width: 100px;
-  border-width: 1px;
-  font-size: 20px;
 }
 
 .header-button:hover {
-  background-color: red;
+  background-color: rgb(221,115,115);
+  border-left: solid;
+  border-right: solid;
+  border-color: red;
   transition: 0.7s;
 }
 
