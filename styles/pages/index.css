@@ -134,7 +134,21 @@
   margin-left: 15rem;
 }
 
-/* Styles for the class personnel section */
+/* Styles for the classroom section */
+
+.classroomMenu {
+  background-color: #fefffe;
+  display: flex;
+  flex-direction :row;
+  justify-content: space-around;
+}
+
+.presetButton {
+  width: 50px;
+  height: 20px;
+  text-align: center;
+  background-color: rgb(118, 146, 255);
+}
 .classroom {
   border: solid 1px blue;
   border-radius: 10px;
@@ -142,10 +156,11 @@
   row-gap: 30px;
   display: flex;
   min-height: 200px;
+  
   /* Ensure the classroom is tall enough to see drops */
 }
 
-/* Styles for the teacher container */
+/* Styles for the teacher container 
 .teacher {
   border: solid 1px blue;
   border-radius: 10px;
@@ -156,7 +171,7 @@
   position: absolute;
   vertical-align: top;
 }
-
+*/
 .students {
   display: flex;
   flex-wrap: wrap;
