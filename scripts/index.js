@@ -22,7 +22,8 @@ function renderClassroom() {
 
 }
 
-
+// Renders the homework portion of the page by going through the array of all the different homeworks
+// This function is called when you open the page as well as every time you make a change to a homework
 function renderHomeworkGrid() {
 
   let homeworkHTML = '';

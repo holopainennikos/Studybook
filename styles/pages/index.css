@@ -312,7 +312,7 @@
   border-radius: 5px;
   justify-content: start;
   align-items: center;
-  column-gap: 10px;
+  column-gap: 15px;
   background-color: rgb(118, 146, 255);
   box-shadow: inset 0 0 2px rgb(109, 132, 224);
 }
@@ -326,7 +326,9 @@
 /* Styles for the div containing the information about a specific homework/test */
 .homework-content,
 .test-content {
-  max-width: 400px;
+  width: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* Styles for the button for removing a homework/test */
@@ -336,6 +338,8 @@
   border-radius: 3px;
   color: white;
   text-align: center;
+  margin-left: auto; /* Pushes the button to the far right */
+  margin-right: 10px;
 }
 
 /* Styles for changing the remove button by hovering it */
