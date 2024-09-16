@@ -20,7 +20,8 @@
   justify-content: space-between;
   /*margin-left: 10px;
   margin-right: 10px;*/
-  background-color: rgb(118, 146, 255);
+  background-image: linear-gradient(rgb(118,146,255), #fefffe);
+  /*background-color: rgb(118, 146, 255); <-- replace background image to this background color to revert */
 }
 
 .block-right {
@@ -153,10 +154,10 @@
 /* Styles for the classroom section */
 
 .classroomMenu {
-  background-color: #fefffe;
   display: flex;
   flex-direction :row;
   justify-content: space-around;
+  
 }
 
 .presetButton {
@@ -164,12 +165,28 @@
   height: 20px;
   text-align: center;
   background-color: rgb(118, 146, 255);
+  flex-grow: 3;
+  border-radius: 5px;
+
 }
-.classroom {
-  border: solid 1px blue;
-  border-radius: 10px;
+
+
+.functionButton {
+  width: 50px;
+  height: 20px;
+  text-align: center;
   background-color: rgb(118, 146, 255);
-  row-gap: 30px;
+  border-radius: 5px;
+}
+
+.functionButton:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* Styling for the buttons in the classroom menu */
+.classroom {
+  border: solid 1px white;
+  background-color: rgb(118, 146, 255);
   display: flex;
   min-height: 200px;
   
@@ -202,7 +219,7 @@
   border-radius: 20%;
   height: 60px;
   width: 60px;
-  background-color: aqua;
+  background-color: #fefffe;
   position: absolute;
   /* Enable absolute positioning for student images */
   cursor: move;
@@ -231,7 +248,8 @@
 
 /* Styles for the div container for the actual feed portion. Contains the posts. */
 .feed-container {
-  background-color: rgb(118, 146, 255);
+  background-image: linear-gradient(rgb(118,146,255), #fefffe);
+  /*background-color: rgb(118, 146, 255); <-- replace background image to this background color to revert */
   flex: 1;
   border-radius: 5px;
 }
