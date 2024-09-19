@@ -95,7 +95,7 @@
   display: flex;
   flex-direction: column;
   border: none;
-  border-radius: 5px;
+ 
   height: 100%;
   column-gap: 10px;
   /*margin-right: 5px;
@@ -109,7 +109,7 @@
   flex-direction: row;
   border-top: solid 1px rgb(118, 146, 255);
   border-bottom: solid 1px rgb(118, 146, 255);
-  border-radius: 5px;
+  
   height: 100%;
   column-gap: 10px;
   background-color: #f5f5f5;
@@ -362,7 +362,7 @@
   display: flex;
   border-top: solid 1px rgb(118, 146, 255);
   border-bottom: solid 1px rgb(118, 146, 255);
-  border-radius: 5px;
+  
   justify-content: start;
   align-items: center;
   column-gap: 15px;
