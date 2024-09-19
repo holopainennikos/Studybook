@@ -1,5 +1,5 @@
 .header {
-  background-color: 	rgb(59, 53, 97);
+  background-color: rgb(242, 240, 239);
   color: white;
   padding-left: 15px;
   padding-right: 15px;
@@ -17,10 +17,11 @@
 
 .header-button {
   border: none;
-  background-color: rgb(59, 53, 97);
-  color: white;
+  /*background-color: rgb(59, 53, 97);*/
   height: 60px;
   width: 100px;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-button:hover {
