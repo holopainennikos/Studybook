@@ -235,6 +235,9 @@
   cursor: move;
   text-align: center;
 }
+.classroom img {
+  width: 60px;
+}
 
 .dragging {
   opacity: 0.5;
