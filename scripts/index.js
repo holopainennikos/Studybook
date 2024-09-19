@@ -22,6 +22,40 @@ function renderClassroom() {
 
 }
 
+function renderFeed() {
+  let feedHTML = '';
+
+  feedHTML += `
+    <div class="feed-header-container">
+      <!-- Placeholder for the main feed content -->
+      <h1>FEED</h1>
+    </div>
+    <div class="feed-container">
+      <div class="feed-post">
+        <!-- Image and contents of the post -->
+        <img class="feed-image" src="images/studybook logo.jpg">
+        <div class="post-contents">
+          <div class="post-text">
+            Hello world! This is the first post that I, the teacher, have posted on this classroom.
+          </div>
+          <div class="post-impressions">
+            <div class="post-comments">
+              <img class="post-impression-icon" src="images/comment.png">
+              <div>5</div>
+            </div>
+            <div class="post-seen">
+              <img class="post-impression-icon" src="images/seen.png">
+              <div>20</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  `
+
+  document.querySelector('.js-block-center').innerHTML = feedHTML;
+}
+
 // Renders the homework portion of the page by going through the array of all the different homeworks
 // This function is called when you open the page as well as every time you make a change to a homework
 function renderHomeworkGrid() {
@@ -212,5 +246,6 @@ function addSubmitTestListeners() {
   });
 }
 
+renderFeed();
 renderHomeworkGrid();
 renderTestsGrid();
