@@ -1,6 +1,6 @@
 body {
   background-color: rgb(242, 240, 239);
-  font-family: Arial;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   color: rgb(33, 33, 33);
   /* The <body> element has a default margin of 8px
      on all sides. This removes the default margins. */
@@ -16,6 +16,7 @@ p {
 
 button {
   cursor: pointer;
+  font-family: Roboto;
 }
 
 h1, h2 {

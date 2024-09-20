@@ -25,10 +25,7 @@
 }
 
 .header-button:hover {
-  background-color: rgb(221,115,115);
-  border-left: solid;
-  border-right: solid;
-  border-color: red;
+  background-color: rgb(81, 163, 163);
   transition: 0.7s;
 }
 

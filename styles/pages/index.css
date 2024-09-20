@@ -348,9 +348,21 @@
 .add-homework-button,
 .add-test-button {
   border: none;
-  background-color: rgb(118, 146, 255);
+  /*background-color: rgb(118, 146, 255);*/
   border-radius: 5px;
   padding: 10px;
+  font-family: Roboto;
+}
+
+.add-homework-button:hover,
+.add-test-button:hover {
+  background-color: rgb(81, 163, 163);
+  transition: 0.7s;
+}
+
+.homework-icon,
+.test-icon {
+  width: 20px;
 }
 
 /* Styles for the div containers of the main homework/test sections. Holds the div containers for each homework/test */
