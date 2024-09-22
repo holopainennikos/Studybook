@@ -169,27 +169,25 @@
   
 }
 
-.presetButton {
-  width: 50px;
-  height: 20px;
-  text-align: center;
-  background-color: rgb(118, 146, 255);
-  flex-grow: 3;
-  border-radius: 5px;
-
-}
-
-
+.presetButton,
 .functionButton {
-  width: 50px;
+  width: 70px;
   height: 20px;
   text-align: center;
   background-color: rgb(118, 146, 255);
+  border: 1px solid #333;
   border-radius: 5px;
 }
 
-.functionButton:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+
+
+
+
+.functionButton:hover,
+.presetButton:hover {
+  background-color:  rgb(242, 240, 239);
+  transition: 0.3s;
 }
 
 /* Styling for the buttons in the classroom menu */
@@ -229,7 +227,6 @@
   border-radius: 20%;
   height: 60px;
   width: 60px;
-  background-color: rgb(118, 146, 255);
   position: absolute;
   /* Enable absolute positioning for student images */
   cursor: move;
