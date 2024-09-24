@@ -173,7 +173,7 @@
   
 }
 
-
+/* Styling for the classroom menu button */
 .presetButton,
 .functionButton {
   width: 70px;
@@ -184,24 +184,31 @@
   border: 1px solid rgb(118, 146, 255);
 }
 
+#saveButton {
+  background-color: rgb(81, 163, 163);
+  border: 1px solid rgb(81, 163, 163);
+}
 
 #deleteButton {
   background-color:rgb(221,115,115);
-  border: 1px solid rgb(221,115,115);;
+  border: 1px solid rgb(221,115,115);
 }
-#saveButton {
-  background-color: rgb(81, 163, 163);
-  border: 1px solid rgb(81, 163, 163);;
-}
-
-
-.presetButton:hover,
-#deleteButton:hover,
-#saveButton:hover {
-  background-color:  rgb(242, 240, 239);
+/* Hover styling for the buttons */
+.presetButton:hover{
+  background-color:rgb(82, 116, 252);
   transition: 0.3s;
 }
 
+#saveButton:hover {
+  background-color: rgb(41, 137, 137);
+  transition: 0.3s;
+}
+
+#deleteButton:hover
+ {
+  background-color:  rgb(245, 66, 66);;
+  transition: 0.3s;
+}
 /* Styling for the buttons in the classroom menu */
 .classroom {
   border: solid 1px rgb(159, 159, 159);
@@ -433,7 +440,7 @@
 
 /* Styles for changing the remove button by hovering it */
 .remove-button:hover {
-  background-color: red;
+  background-color: rgb(245, 66, 66);
   transition: 0.25s;
   font-weight: 700;
 }
