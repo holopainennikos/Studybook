@@ -1,3 +1,7 @@
+.header button {
+  font-size: 1.1rem;
+}
+
 /* Flexbox container for the main blocks layout */
 .blocks-grid {
   display: flex;
@@ -169,23 +173,31 @@
   
 }
 
+
 .presetButton,
 .functionButton {
   width: 70px;
-  height: 20px;
+  height: 30px;
   text-align: center;
-  background-color: rgb(118, 146, 255);
-  border: 1px solid #333;
   border-radius: 5px;
+  background-color: rgb(118, 146, 255);
+  border: 1px solid rgb(118, 146, 255);
 }
 
 
+#deleteButton {
+  background-color:rgb(221,115,115);
+  border: 1px solid rgb(221,115,115);;
+}
+#saveButton {
+  background-color: rgb(81, 163, 163);
+  border: 1px solid rgb(81, 163, 163);;
+}
 
 
-
-
-.functionButton:hover,
-.presetButton:hover {
+.presetButton:hover,
+#deleteButton:hover,
+#saveButton:hover {
   background-color:  rgb(242, 240, 239);
   transition: 0.3s;
 }
