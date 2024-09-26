@@ -354,13 +354,6 @@
   margin-bottom: 5px;
 }
 
-.test-header-container:hover,
-.homework-header-container:hover {
-  background-color: rgb(81, 163, 163);
-  transition: 0.3s;
-  cursor: pointer;
-}
-
 /* Styles for the h2 homework and test titles */
 .homework-title,
 .tests-title {
@@ -369,7 +362,8 @@
 
 /* Styles for the buttons for adding a homework/test */
 .add-homework-button,
-.add-test-button {
+.add-test-button,
+.collapse-button {
   border: none;
   /*background-color: rgb(118, 146, 255);*/
   border-radius: 5px;
@@ -378,14 +372,25 @@
 }
 
 .add-homework-button:hover,
-.add-test-button:hover {
+.add-test-button:hover,
+.collapse-button:hover {
   background-color: rgb(81, 163, 163);
   transition: 0.7s;
 }
 
+.collapse-button {
+  margin-left: auto;
+}
+
+.rotated {
+  transform: rotate(180deg);
+}
+
 .homework-icon,
-.test-icon {
+.test-icon,
+.collapse-button-icon {
   width: 20px;
+  height: 20px
 }
 
 /* Styles for the div containers of the main homework/test sections. Holds the div containers for each homework/test */
