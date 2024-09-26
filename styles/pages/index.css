@@ -354,6 +354,13 @@
   margin-bottom: 5px;
 }
 
+.test-header-container:hover,
+.homework-header-container:hover {
+  background-color: rgb(81, 163, 163);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
 /* Styles for the h2 homework and test titles */
 .homework-title,
 .tests-title {
@@ -388,9 +395,13 @@
   /*background-color: rgb(118, 146, 255);*/
   background-color: rgb(242, 240, 239);
   border-radius: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
+  /*padding-top: 5px;
+  padding-bottom: 5px;*/
+  max-height: 500px; /* Adjust based on expected content size */
+  overflow: hidden;
+  overflow-y: auto;
+  transition: max-height 0.3s ease;}
+
 
 /* Styles for the div containers for each of the homework and test instances. Holds within the following things:
 - homework/test image
@@ -403,12 +414,10 @@
   display: flex;
   border-top: solid 1px rgb(242, 240, 239);
   border-bottom: solid 1px rgb(242, 240, 239);
- 
   justify-content: start;
   align-items: center;
   column-gap: 15px;
   background-color: rgb(118, 146, 255);
-  box-shadow: inset 0 0 2px rgb(118, 146, 255);
 }
 
 /* Styles for the homework/test subject div */
@@ -423,7 +432,8 @@
   width: 300px;
   margin-top: 10px;
   margin-bottom: 10px;
-  
+  max-height: 30px;
+  overflow-y: auto;  /* Enable vertical scrolling if content exceeds the height */
 }
 
 
@@ -495,4 +505,9 @@
   height: 100%;
   background-color: rgb(118, 146, 255);
   z-index: -1;
+}
+
+.collapsed {
+  max-height: 0;
+  overflow: hidden;
 }

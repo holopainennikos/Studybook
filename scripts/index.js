@@ -105,6 +105,9 @@ function renderHomeworkGrid() {
   addSubmitHomeworkListeners();
   addRemoveHomeworkButtonListeners();
   addAddHomeworkButtonListeners();
+  document.querySelector('.js-homework-header').addEventListener('click', function() {
+    document.querySelector('.js-homework-container').classList.toggle('collapsed');
+  })
 }
 
 function addRemoveHomeworkButtonListeners() {
