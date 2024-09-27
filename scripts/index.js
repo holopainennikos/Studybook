@@ -28,7 +28,7 @@ function renderFeed() {
   feedHTML += `
     <div class="feed-header-container">
       <!-- Placeholder for the main feed content -->
-      <h1>FEED</h1>
+      <p>Feed</p>
     </div>
     <div class="feed-container">
       <div class="feed-post">
@@ -105,8 +105,8 @@ function renderHomeworkGrid() {
   addSubmitHomeworkListeners();
   addRemoveHomeworkButtonListeners();
   addAddHomeworkButtonListeners();
-  document.querySelector('.js-collapse-button').addEventListener('click', function() {
-    document.querySelector('.js-collapse-button').classList.toggle('rotated');
+  document.querySelector('.js-collapse-homework-button').addEventListener('click', function() {
+    document.querySelector('.js-collapse-homework-button').classList.toggle('rotated');
     document.querySelector('.js-homework-container').classList.toggle('collapsed');
   })
 }
@@ -169,6 +169,10 @@ function renderTestsGrid() {
   addSubmitTestListeners();
   addAddTestButtonListeners();
   addRemoveTestButtonListeners();
+  document.querySelector('.js-collapse-tests-button').addEventListener('click', function() {
+    document.querySelector('.js-collapse-tests-button').classList.toggle('rotated');
+    document.querySelector('.js-test-container').classList.toggle('collapsed');
+  })
 }
 
 function addRemoveTestButtonListeners() {

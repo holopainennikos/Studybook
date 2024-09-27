@@ -272,7 +272,6 @@
 
 /* Styles for the div container for the feed's header. Currently only contains the h1 title. */
 .feed-header-container {
-  text-align: center;
   background-color: rgb(242, 240, 239);
 }
 
