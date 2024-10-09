@@ -1,5 +1,8 @@
+* {
+  font-weight: 500;
+}
 .header button {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 /* Flexbox container for the main blocks layout */
@@ -67,7 +70,7 @@
 /* Styles for the div container that holds the selectors and the selected day */
 .schedule-selector-container {
   display: flex;
-  flex-direction: row;
+  align-items: center;
   border: none;
   border-radius: 5px;
   height: 100%;
@@ -79,27 +82,28 @@
 .schedule-back-button,
 .schedule-forward-button {
   border: none;
-  background-color: rgb(221,115,115);
+  background-color: rgb(81, 163, 163);
   border-radius: 5px;
-  color: white;
+  color: black;
   height: 30px;
-  width: 100px;
+  width: 70px;
   border-width: 1px;
   font-size: 12px;
 }
 
-/* Styles for the selected schedule day*/
-.schedule-day {
-  /*align-items: center;*/
-  text-align: center;
+
+.schedule-back-button:hover,
+.schedule-forward-button:hover {
+  background-color: rgb(41, 137, 137);
+  transition: 0.25s;
 }
+
 
 /* Styles for the div container for each of the periods for the selected day */
 .schedule-period-container {
   display: flex;
   flex-direction: column;
   border: none;
- 
   border-radius: 10px;
   height: 100%;
   column-gap: 10px;
